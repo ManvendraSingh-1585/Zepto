@@ -27,6 +27,66 @@
 .App-link {
   color: #61dafb;
 }
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: beige;
+    }
+
+    .tags-input {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; /* Align items to the right */
+    }
+
+    #selectedItems {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end; /* Align items to the right */
+      margin-bottom: 10px;
+    }
+
+    #selectedItems div {
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #itemInput {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+      margin-bottom: 10px; /* Add margin to the bottom */
+    }
+
+    #optionsList {
+      position: absolute;
+      top: 100%; /* Position below the input */
+      right: 0;
+      width: 200px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: #e2e1c7;
+      z-index: 1;
+    }
+
+    #optionsList div {
+      padding: 8px;
+      cursor: pointer;
+      border-bottom: 1px solid #ccc;
+    }
+
+    #optionsList div:last-child {
+      border-bottom: none;
+    }
 
 @keyframes App-logo-spin {
   from {
